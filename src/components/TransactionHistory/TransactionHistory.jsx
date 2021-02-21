@@ -1,13 +1,15 @@
 import TransactionItem from './TransactionItem'
+import styles from './TransactionHistory.module.css'
+
+
 
 
 export default function TransactionHistory({transactions}) {
-  console.log(transactions);
     return (
-<table className="transaction-history">
-  <thead>
-    <tr>
-      <th>Type</th>
+<table className={styles.container}>
+  <thead className={styles.thumbnails}>
+    <tr >
+      <th className={styles.thumbnailItem}>Type</th>
       <th>Amount</th>
       <th>Currency</th>
     </tr>
@@ -28,3 +30,4 @@ export default function TransactionHistory({transactions}) {
     )
  
 }
+

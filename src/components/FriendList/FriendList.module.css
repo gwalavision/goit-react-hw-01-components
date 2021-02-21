@@ -1,0 +1,51 @@
+.container {
+  margin: 0 auto;
+  width: 300px;
+
+  margin-bottom: 50px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: green;
+  border: 1px #000;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  border: 1px #b8b6b6 solid;
+  box-shadow: 9px 5px 15px -7px #b8b6b6;
+}
+
+.avatar {
+  width: 20%;
+  height: auto;
+  margin-right: 5px;
+
+  border-radius: 4px;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+
+  margin-right: 5px;
+
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  background-color: green;
+}
+
+.offline {
+  composes: status;
+  background-color: red;
+}

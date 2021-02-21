@@ -1,0 +1,30 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px #b8b6b6 solid;
+  border-collapse: collapse;
+}
+
+.thumbnails {
+  text-transform: uppercase;
+  background-color: #2a2a;
+}
+
+.thumbnailItem {
+  padding: 15px;
+  border: 1px #b8b6b6 solid;
+}
+
+.itemContainer:nth-child(odd) {
+  background-color: #fff;
+}
+
+.itemContainer:nth-child(even) {
+  background-color: rgb(175, 173, 173);
+}
+
+.item {
+  border: 1px #b8b6b6 solid;
+  text-align: center;
+  padding: 10px 15px;
+}
