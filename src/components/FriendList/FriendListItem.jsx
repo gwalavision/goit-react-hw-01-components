@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 import styles from './FriendList.module.css'
 
 export default function FriendsListItem({ avatar, name, isonline }) {
+
     const colorIndicator = isonline ? styles.online : styles.offline
+    
     return (
         <li className={styles.item}>
             <span className={colorIndicator}></span>
@@ -18,6 +20,5 @@ FriendsListItem.defaultProps = {
 
 FriendsListItem.propTypes = {
     name: PropTypes.string.isRequired,
-    // isOnline: PropTypes.bool.isRequired
 }
 
